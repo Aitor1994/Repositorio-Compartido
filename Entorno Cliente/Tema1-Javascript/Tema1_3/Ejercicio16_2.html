@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Página secundaria</h1>
+    <button onclick="cambiarColor()">Boton 1</button>
+    <button onclick="cambiarColorPrincipal()">Boton 2</button>
+    <button onclick="cerrarVentana()">Boton 3</button>
+
+    <script>
+    function cambiarColor(){
+        window.opener.document.body.style.backgroundColor="Red";
+    }
+
+    function cambiarColorPrincipal(){
+        window.document.body.style.backgroundColor="green";
+    }
+
+    function cerrarVentana(){
+        window.close();
+    }
+</script>
+</body>
+</html>

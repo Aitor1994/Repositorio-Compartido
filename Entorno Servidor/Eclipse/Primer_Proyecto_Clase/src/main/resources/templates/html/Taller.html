@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+	<h1>Datos de un taller</h1>
+	<!-- th:if es como un if normal en java -->
+	
+	<ul th:if="${taller != null}">
+		<li>Id:<span th:text = "${taller.getId()}"></span></li>
+		<li>Nombre:<span th:text = "${taller.getNombre()}"></span></li>
+		<li>Numero Plazas:<span th:text = "${taller.getPlazas()}"></span></li>
+	</ul>
+	
+	<!-- con th:href hacemos una url dinamica que nos llevara a la pagina de todos los talleres. -->
+	<a th:href="@{/taller/todos}">Esto es un enlace</a>
+	
+</body>
+</html>

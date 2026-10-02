@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1 th:text = "|La suma de los numeros ${numero1} + ${numero2} = ${numero1 + numero2}|"></h1>
+	<h1 th:text = "|La multiplicacion de los numeros ${numero1} * ${numero2} = ${numero1 * numero2}|"></h1>
+	<h2 th:text = "|Podemos usar model para realizar las operaciones directamente en la clase y traer el resultado con model.AddAttribute 
+					como el resultado de la multiplicacion = ${resultado}|"></h2>
+	<h2 th:text = "|Este es el atributo traido con @Modelattribute ${etiqueta}|"></h2>
+	<h1>IMAGEN</h1>
+	<!-- Las imagenes se insertan directamente en el HTML sin javascript -->
+	<img alt="esto es una calculadora" src="/images/calculadora.png">
+</body>
+</html>

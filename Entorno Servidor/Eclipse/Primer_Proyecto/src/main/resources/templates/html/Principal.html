@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" th:href="@{/css/estilos.css}">
+
+</head>
+<body>
+    
+    <h1 align="center" style="text-decoration: underline;">Este es mi proyecto de estudio base para Spring Boot.</h1>
+  <!-- APUNTE: Aquí pintaremos el mensaje dinámico que enviaremos desde el controlador -->
+    <h3 align="center" th:text="${mensaje}">Aquí irá el mensaje de Java</h3>
+  <!-- APUNTE:Podemos usar datos dinamicos como la fecha actual: -->
+  	<p align="center"th:text= "|La FP en la que estas es: ${curso}|"></p>
+  <!-- APUNTE:Usamos los datos traidos por @PathVariable -->
+	<h4 align="center" th:text="|Los datos traidos con @PathVariable ${nombre}, ${apellido}, ${edad}.|"></h4>
+ 
+ <!-- Para poder aplicar display:flex y que se situen una al aldo de la otra deben estar dentro de un contendor <div> -->
+	<div class="contenedor-imagenes">
+    <img alt="" th:src="@{/images/Snake.jpg}">
+    <img alt="" th:src="@{/images/drake.jpg}">
+	</div>
+    
+   
+    
+    </body>
+</html>

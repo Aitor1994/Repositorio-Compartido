@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 16</title>
+</head>
+<body>
+
+    <h1 style="text-align: center;">Página principal</h1>
+    <button  onclick="abrirBoton()"> Abrir ventana nueva</button>
+    <button onclick="moverVentana()">Mover ventana 2</button>
+    <button onclick="centrarVentana()">Centrar ventana</button>
+    <button onclick="aumentarTamañoVentana()"> Aumentar tamaño</button>
+    <button onclick="cambiarTamaño()"> Cambiar tamaño</button>
+
+    <script>
+        let nuevaVentana;
+
+        function abrirBoton(){
+        nuevaVentana=window.open("Ejercicio16_2.html","","width=300px, height=400px, top = 400, left = 400px;");
+        }
+
+        function moverVentana(){
+            nuevaVentana.moveBy(200, 100);
+        }
+
+        function centrarVentana(){
+            nuevaVentana.moveBy(500, 200);
+        }
+
+        function aumentarTamañoVentana(){
+            nuevaVentana.resizeBy(100, 100);
+        }
+
+        function cambiarTamaño(){
+            nuevaVentana.resizeBy(100, 150);
+        }
+    </script>
+</body>
+</html>

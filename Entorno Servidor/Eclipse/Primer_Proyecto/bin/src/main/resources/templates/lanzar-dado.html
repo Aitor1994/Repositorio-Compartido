@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1 th:text= "|Lanzas el dado y sale: ${dado}|"></h1>
+	<h3 th:text="|Aqui tambien podemos usar la variable curso (${curso}) porque es @ModelAtributte (global para todos los html que tenga esa clase)|"></h3>
+	<!-- APUNTE:Usamos los datos del 2 dado, podemos usar tantos addmodelatribute como queramos. -->
+	<h1 th:text="|Aqui lanzamos el segundo dado recogido con otra etiqueta: ${dado2}"></h1>
+	
+</body>
+</html>

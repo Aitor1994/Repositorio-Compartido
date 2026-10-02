@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+        let topping = prompt("Escribe un topping para el helado [oreo/kitkat/brownie/lacasitos]").toLowerCase();
+        let precioHelado = 1.90;
+        let total = 0;
+        switch(topping){
+            case "oreo": 
+                total = precioHelado + 1;
+                document.write(`El precio del helado con topping de ${topping} es de ${total}€`);
+                break;
+            case "kilkat":
+                total = precioHelado + 1.50;
+                document.write(`El precio del helado con topping de ${topping} es de ${total}€`);
+                break;
+            case "brownie":
+                total = precioHelado + 0.75;
+                document.write(`El precio del helado con topping de ${topping} es de ${total}€`);
+                break;
+            case "lacasitos":
+                total = precioHelado + 0.95;
+                document.write(`El precio del helado con topping de ${topping} es de ${total}€`);
+                break;
+            default:
+                document.write(`No tenemos este topping, lo sentimos, el precio del helado sin topping seria <b>${precioHelado}€</b>`);
+                break;
+        }
+
+    </script>
+</body>
+</html>

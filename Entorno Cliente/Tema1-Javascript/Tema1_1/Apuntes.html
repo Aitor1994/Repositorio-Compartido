@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- El script se escriben al final del body, para ver lo que hace el codigo javascript abrimos la pagina con Live Server
+    pero como no es un elemento bloque como en los html no se ve en la propia pagina sino que se ven en la consola (F12)
+    que son los elementos del desarrollador-->
+<script>
+    /* Declarar variabels JavaScript: let , const, array, List .... */
+    let nombre = "Juan";    ç
+    let edad = 21;
+    let esMayor = true;
+    const PI = 3.1416; // Constante
+    
+    //ARRAYS: En JS los arrays son dinámicos por defecto (pueden cambiar de tamaño) y mezclan tipos.
+    let asignaturas = ["DWEC", "DWES", "DIW"]; 
+    let mezcla = [10, "Hola", true];            // ¡Permite guardar tipos diferentes!
+    asignaturas.push("DAW");                    // .push() añade al final (como .add() en Java)
+    let primero = asignaturas[0];               // Acceso por índice: "DWEC"
+    let total = asignaturas.length;             // Tamaño del array (como .size() o .length)
+
+    // OBJETOS
+    let alumno = {
+        nombre: "Pedro",
+        curso: "2º DAW",
+        edad: 20
+    };
+     // Acceso a las propiedades del objeto:
+    console.log(alumno.nombre);                 // Devuelve "Pedro"
+    alumno.edad = 21;                           // Modificar una propiedad
+
+    /* Los String Templates sirven para meter variables directamente dentro de un texto usando comillas 
+    invertidas `` ` `` y \${variable} sin usar el signo '+' */
+    let curso = "2º DAW";
+    let modulo = "DWEC";
+    let mensaje = `Bienvenido a ${curso}, hoy daremos ${modulo}`;
+
+    /* 'for...of' recorre los VALORES de un array. 'for...in' recorre las CLAVES (índices o propiedades de un objeto) */
+    let modulos = ["DWEC", "DWES"];
+
+    for (let mod of modulos) console.log(mod);  // Muestra: "DWEC", "DWES"
+    for (let i in modulos) console.log(i);      // Muestra: 0, 1
+
+    /* Los cuadros de diálogo pausan la ejecución del navegador. 'alert' solo avisa, 'confirm' devuelve un booleano (true/false) y 'prompt' devuelve un string con lo escrito o null si se cancela. ⚠️ ¡OJO!: Todo lo que se recoge por 'prompt' es siempre un STRING, si quieres operar matemáticamente con ello debes usar parseInt() o Number() */
+
+    alert("Buenas tardes a todos"); // Solo muestra mensaje con botón Aceptar
+
+    let acepto = confirm("¿Acepta las condiciones?"); // true si pulsa Aceptar, false si Cancela
+
+    let respuesta = prompt("Escribe tu nombre"); // Devuelve el texto escrito o null si Cancela
+    alert(`Tu nombre es ${respuesta}`);
+</script>
+
+
+
+</body>
+
+</html>

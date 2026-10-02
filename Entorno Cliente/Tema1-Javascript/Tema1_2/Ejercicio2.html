@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* Crear una página que pida un número entre 0 y 23:
+        1. Si no está entre esos valores, volver a preguntar el número.
+        2. Si es correcto:
+        1. Escribir por pantalla “Buenos días” si el valor está entre 6 y 11
+        2. Escribir por pantalla “Buenas tardes” si el valor está entre 12 y 20
+        3. Escribir por pantalla “Buenas noches” si el valor está entre 21 y 6 */
+        let numero;
+
+        do{
+            numero = prompt("Escribe un numero comprendido entre 0 y 23");
+        
+        }while(numero < 0 || numero > 23);
+        
+        if(numero >= 6 && numero <= 11){
+            document.write("Buenos dias");
+        }else if(numero >= 12 && numero <= 20){
+            document.write("Buenas tardes");
+        }else{
+            document.write("Buenas noches");
+        }
+
+    </script>
+
+
+</body>
+</html>

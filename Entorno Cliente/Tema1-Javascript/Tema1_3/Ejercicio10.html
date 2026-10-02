@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*Genera 10 números aleatorios entre 0 y 20 (incluido) y calcula la suma de ellos.
+    Debe mostrar por pantalla: “La suma de los numeros xxxxx es x”*/
+    let suma = 0;
+    let cad = "";
+
+    for(i = 0; i < 10; i++){
+        //Empieza en 0 acaba en 20 incluidos:
+        let numeroAle= Math.floor(Math.random() * 21) + 0;
+        suma += numeroAle;
+        cad += numeroAle + " ";
+    }
+
+    document.write(`La suma de los numeros ${cad} es ${suma}`);
+    </script>
+</body>
+</html>

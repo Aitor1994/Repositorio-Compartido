@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+</head>
+
+<body>
+	<h1>Zona de Descuentos</h1>
+
+	<!-- Saca el dato del Model mochila de Controladores, lo que esta netre etiquetas se sustituye por lo que traiga la 
+	etiqueta `descuento` es " como un comentario para ti o el que vea el codigo" -->
+	<h2 th:text="|${descuento}|">Aquí va el descuento</h2>
+
+	<!-- Sacamos el Dato 2 de la mochila (La fecha de caducidad) fusionada con texto usando las barras || -->
+	<p th:text="|Esta oferta exclusiva caduca el día: ${caducidad}|"></p>
+</body>
+
+</html>

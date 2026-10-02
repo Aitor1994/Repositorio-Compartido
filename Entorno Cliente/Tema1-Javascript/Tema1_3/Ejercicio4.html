@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*Crear un programa que muestre la fecha actual en distintos formatos:
+        1. dd/mm/yyyy
+        2. Dia de la semana mes día año, en inglés: Ej Mon Sep 30 2024
+        3. dd/mm/yyyy hh:mm:ss
+        4. Hh:mm:ss*/
+
+        let fechaActual = new Date();
+
+        document.write(fechaActual.toLocaleDateString());
+        document.write(`<br>`);
+        document.write(fechaActual.toDateString());
+        document.write(`<br>`);
+        document.write(fechaActual.toLocaleString());
+        document.write(`<br>`);
+        document.write(fechaActual.toLocaleTimeString());
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+<table th:unless="${talleres == null|| talleres.size = 0"></table>
+
+<!-- Elemento table -->
+	<table>
+		<thead>
+			<tr>
+				<th>Id</th>
+				<th>Nombre</th>
+				<th>Plazas</th>
+			</tr>
+		</thead>
+		<tbody>
+		<!-- Usamos la etiqueta que le pusmos a la listaTalleres no directamente listaTalleres -->
+			<tr th:each="taller : ${talleres}">
+				<td>
+					<a th:href="@{'/taller/uno/' + ${taller.id}}" 
+					   th:text ="${taller.id}"></a>
+				</td>
+				<td th:text="${taller.nombre}">Nombre</td>
+				<td th:text="${taller.plazas}">Plazas</td>
+			</tr>
+		</tbody>
+	</table>
+	
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejericio 7</title>
+</head>
+<body>
+    <!-- Crear una página que pida al usuario dos valores numéricos y escriba en la página HTML la suma y la resta
+de ambos de forma que muestre con string templates ( no contatenando):
+1. La suma de a y b es c
+2. La resta de a y b es c 
+
+CUIDADO PORQUE LOS PROMPT TE DEVUELVE UN STRING , HAY QUE CONVERTIRLOS A NUMBER:-->
+<script>
+    let numero1 = prompt("Indica el primer numero:");
+    let numero2 = prompt("Indica el segundo numero:");
+
+    let resta = Number(numero1) - Number(numero2);
+    let suma = Number(numero1) + Number(numero2);
+
+    document.write(`La suma de los valores es ${suma} Y la resta seria ${resta}`)
+
+</script>
+</body>
+</html>

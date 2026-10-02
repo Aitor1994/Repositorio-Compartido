@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Abra la consola del navegador para ver los resultados</h1>
+    <p>Para abrir la consola pulse F12 o haga clic derecho -> Inspeccionar -> Consola.</p>
+
+    <script>
+        // 1. Mensaje "Bienvenido" al entrar en la página
+        console.log("Bienvenido");
+
+        // 2. Frase con comillas simples en el interior
+        console.log("Frase con comillas dobles");
+
+        // 3. Frase con comillas dobles en el interior
+        console.log('Frase con comillas simples');
+
+        // 4. Mensaje alert con vuestro nombre al entrar
+        alert("Hola, mi nombre es Carlos");
+
+        // 5. Repetimos el paso anterior creando una variable con vuestro nombre
+        let miNombre = "Carlos";
+        alert(miNombre);
+
+        /*Crear una página que pida al usuario vuestro nombre a través de un cuadro de entrada de texto. Y que pinte
+        en la página el resultado.*/ 
+        let nombre = prompt("Escribe tu nombre aqui:")
+        console.log("su nombre es " + nombre);
+
+        let edad = confirm("Eres mayor de edad?");
+
+        if(edad === true){
+            console.log("Es mayor de edad¡");
+        }else{
+            console.log(" Es menor de edad¡")
+        }
+    </script>
+
+</body>
+</html>

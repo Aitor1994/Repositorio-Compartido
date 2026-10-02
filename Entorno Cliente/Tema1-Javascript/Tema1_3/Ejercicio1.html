@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*1. Crear una página cuyo código JS cree dos fechas: una actual y otra con vuestro cumpleaños:
+        1. Imprimir las dos fechas por pantalla con la información completa
+        2. Extraer su año e imprimirlos por pantalla
+        3. Actualizar el año de la fecha actual por la del año pasado. Escribir la fecha con un formato más legible.
+        4. Escribir por pantalla la fecha actual obteniendo el día, el mes y el año por separado y concatenando el
+        símbolo “/”: (dd/mm/yyyy)*/
+        let fechaActual = new Date();
+        let fechaCumpleaños = new Date(1994, 5, 4);
+
+        document.write(`${fechaActual} , ${fechaCumpleaños} <br><br>`);
+
+        let añoActual = fechaActual.getFullYear();
+        let añoCumpleaños = fechaCumpleaños.getFullYear();
+        document.write(`Año atual: ${añoActual}, Año cumpleaños: ${añoCumpleaños} <br><br>`);
+
+        fechaActual.setFullYear(fechaActual.getFullYear()-1);
+        document.write(fechaActual.toLocaleDateString());
+    </script>
+</body>
+</html>

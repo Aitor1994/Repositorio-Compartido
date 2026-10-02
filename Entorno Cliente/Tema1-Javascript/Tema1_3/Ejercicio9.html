@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    /*Crea un programa que genere un número aleatorio entre 1 y 10 (incluido). Luego, pide al usuario que
+    intente adivinar el número utilizando un cuadro de diálogo (prompt). Si el usuario adivina correctamente,
+    muestra una alerta con el mensaje "¡Felicidades, adivinaste el número!". Si no adivina, muestra una alerta
+    diciendo "Lo siento, el número era [número]".*/
+
+    let aleatorio = Math.floor(Math.random() * (10)) + 1;
+
+    let numero = prompt("Intenta adivinar el numero ¡");
+
+    if(aleatrio === numero){
+        document.write("Adivinaste el numero");
+    }else{
+        document.write(`Lo siento, el número era ${número}`);
+    }
+</script>
+</body>
+</html>

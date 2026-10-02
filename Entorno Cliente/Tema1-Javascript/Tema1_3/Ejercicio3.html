@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+/*Crear un programa que pida al usuario dos números: el día y el mes de tu cumpleaños, y saque todos los
+años en que tu cumpleaños va a caer en domingo desde este año hasta el año 2100.
+NOTA: los meses comienzan por 0*/
+let dia = parseInt(prompt("¿Cual es el dia de tu cumpleaños?"));
+let mes = parseInt(prompt("Inidica el mes de tu cumpleaños:"));
+
+let cumpleanos = new Date(new Date().getFullYear(), mes -1, dia);
+
+document.write(cumpleanos.getFullYear());
+
+let contador = 0;
+for(i = cumpleanos.getFullYear(); i <= 2100; i++){
+    
+    cumpleanos.setFullYear(i);
+    console.log(cumpleanos);
+    console.log(cumpleanos.getDay() + " ");
+    if(cumpleanos.getDay() == 0){
+        contador++;
+    }
+}
+
+document.write(`Tu cumpleaños cae ${contador} veces en domingo`);
+
+    </script>
+</body>
+</html>

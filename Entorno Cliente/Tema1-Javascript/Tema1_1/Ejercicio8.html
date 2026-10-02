@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+    <!-- Crear una página que pida el precio de un artículo y la cantidad de artículos que desea comprar. Escribir en
+    la página HTML el total que debe abonar. ( El precio debe ser un numero con decimales) -->
+    <script>
+    let numero1 = Number(prompt("Indica el primer numero:"));
+    let numero2 = Number(prompt("Indica el segundo numero:"));
+    <!-- To fixed sirve para indicar el numero de decimales que queremos que aparezcan.-->
+    document.write(`El precio total de la cesta es ${(numero1 * numero2).toFixed(2)}`);
+
+    </script>
+    </body>
+    </html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nombre = prompt("¿Como te llamas?");
+        let apellidos = prompt("¿Cual es tu apellido?");
+        let salario = parseFloat(prompt("¿Cuanto cobras al mes?"));
+        let edad = parseInt(prompt("¿Cuantos años tienes?"));
+        
+        if(salario > 2000){
+            document.write(`${nombre}, ${apellidos}, ${salario}, ${edad}`);
+        }else if(salario > 1000 && salario < 2000){
+            if(edad > 45){
+                document.write(`${nombre}, ${apellidos}, ${salario*1.0123}, ${edad}`);
+            }else{
+                document.write(`${nombre}, ${apellidos}, ${salario*1.10}, ${edad}`);
+            }
+        }else if(salario < 1000){
+            if(edad < 30){
+                salario = 1000;
+                document.write(`${nombre}, ${apellidos}, ${salario}, ${edad}`);
+            }else if(edad > 30 && edad < 45){
+                document.write(`${nombre}, ${apellidos}, ${salario*1.03}, ${edad}`);
+            }else{
+                if(edad > 45){
+                document.write(`${nombre}, ${apellidos}, ${salario*1.03}, ${edad}`);
+            }else{
+                document.write(`${nombre}, ${apellidos}, ${salario*1.15}, ${edad}`);
+            }
+            }
+        }
+    </script>
+</body>
+</html>
