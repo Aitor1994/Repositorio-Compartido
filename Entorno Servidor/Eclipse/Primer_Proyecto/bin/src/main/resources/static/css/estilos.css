@@ -1,5 +1,0 @@
-.contenedor-imagenes {
-    display: flex;            /* Pone las imágenes una al lado de la otra */
-    justify-content: center;  /* Centra el grupo completo en la pantalla */
-    gap: 20px;                /* Deja un espacio de separación entre ambas */
-}

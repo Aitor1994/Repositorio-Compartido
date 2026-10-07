@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1 style = "text-align:center">Aqui mostramos un taller concreto.</h1>
+	
+	<h2 style="display:inline">ID: </h2> <p style="display:inline" th:text="|${etiqueta.id}|"></p><br>
+	<h2 style="display:inline">Nombre: </h2> <p style="display:inline" th:text="|${etiqueta.nombre}|"></p><br>
+	<h2 style="display:inline">Numero Plazas: </h2> <p style="display:inline" th:text="|${etiqueta.plazas}|"></p><br>
+	
+	<!-- INTERESANTE¡¡ Con th:utext podemos hacerlo todo en un Template ya que UTEXT tambien admite etiquetas HTML 
+	<p th:utext="|<b>ID:</b> ${etiqueta.id} <br> <b>Nombre:</b> ${etiqueta.nombre} <br> <b>Plazas:</b> ${etiqueta.plazas}|"></p>-->
+	
+	<!-- Ruta a la pagina principal con th:href -->
+	<a th:href = "@{/taller/principal}">Pagina Principal</a>
+	
+	</body>
+	
+</html>

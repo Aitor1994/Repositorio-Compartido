@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!--IMPORTANTE: AQUI CARGAMOS LA LINEA DE ESTILOS ¡¡¡ -->
+<link rel="stylesheet" th:href="@{/css/estilos.css}">
+</head>
+<body>
+	<h1 style = "text-align: center">Lista de talleres</h1>
+	
+	<table>
+	  <tr>
+	    <th>ID</th>
+	    <th>NOMBRE</th>
+	    <th>PLAZAS</th>
+	  </tr>
+	  <!-- Los Estilos estan siempre en la carpeta STATIC -->
+	  <tr th:each = "taller : ${lista}">
+	    <td><a th:href = "@{/taller/{id} (id = ${taller.id})}" th:text = "${taller.id}"></a></td>
+	    <td th:text = "${taller.nombre}"></td>
+	    <td th:text = "${taller.plazas}"></td>
+	  </tr>
+	</table>
+
+<a th:href = "@{/taller/principal}">Página principal</a>
+</body>
+</html>
